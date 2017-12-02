@@ -22,7 +22,7 @@ var insertVehicle = exports.insertVehicle = (req, res) => {
 				})
 		}).catch(error => {
 				return res.status(400).json({
-					success: true,
+					success: false,
 					error: error
 				})
 		})
@@ -37,7 +37,7 @@ var getDates = exports.getDates = (req, res) => {
 		})
 	}).catch(error => {
 		return res.status(400).json({
-			success: true,
+			success: false,
 			error: error
 		})
 	})
@@ -52,7 +52,7 @@ var getOnDates = exports.getOnDates = (req, res) => {
 		})
 	}).catch(error => {
 		return res.status(400).json({
-			success: true,
+			success: false,
 			error: error
 		})
 	})

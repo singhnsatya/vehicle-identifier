@@ -1,0 +1,30 @@
+{
+	"postdata": {
+		"data": [{
+			"id": "vehicle 1",
+			"frame": "plastic",
+			"powertrain": "human",
+			"wheels": {
+				"plastic": 3,
+				"positions": [
+					"left rear",
+					"right rear",
+					"front"
+				]
+			},
+			"vehicle_name": "Big Wheel"
+		}, {
+			"id": "vehicle 2",
+			"frame": "metal",
+			"powertrain": "human",
+			"wheels": {
+				"metal": 2,
+				"positions": [
+					"rear",
+					"front"
+				]
+			},
+			"vehicle_name": "Bicycle"
+		}]
+	}
+}
