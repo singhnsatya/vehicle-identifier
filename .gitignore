@@ -3,7 +3,7 @@ default.js
 sample1.xml
 backend/
 ux/node_modules/
+ux/gulpfile.js
 node-api/node_modules/
 node-api/server.js
 node-api/ruleset.js
-

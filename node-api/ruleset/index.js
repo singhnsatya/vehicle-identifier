@@ -1,0 +1,12 @@
+module.exports = {
+  "metal": {
+    "4": {
+      "powertrain": "Internal Combustion",
+      "vehicle": "Car"
+    },
+    "2": {
+      "powertrain": "human",
+      "vehicle": "Bicycle"
+    }
+  }
+}
