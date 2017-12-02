@@ -2,7 +2,6 @@ import { observable, action, computed, useStrict } from 'mobx';
 import { fileApi } from '../../api';
 
 class FileStore {
-	@observable todos = ['buy milk', 'buy eggs']
 	@observable filter = ''
 	@observable allDates = []
 	@observable tables = []
@@ -30,10 +29,6 @@ class FileStore {
 		.then(result => {
 			this.tables = result.data;
 		})
-	}
-	
-	createTodo(value) {
-		this.todos.push(value)
 	}
 }
 
