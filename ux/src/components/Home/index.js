@@ -23,6 +23,7 @@ class Homes extends React.Component {
 			history.push('/')
 		}
 		$("#filter").hide();
+		// $("#summary").remove();
 		let fileData = [files['base64'][0].split(',')]
 		var bufferData = fileData[0][1];
 		if(files.fileList[0].size > 0) {
@@ -45,10 +46,9 @@ class Homes extends React.Component {
 			<div>
 			<p className="title">Upload a xml file</p><br/>
 			<ReactFileReader fileTypes={[".xml"]} base64={true} multipleFiles={true} handleFiles={this.uploadFile.bind(this)}>
-			  <button className='btn'>Upload</button>
+			  <button className='btn'>Upload</button>&nbsp;&nbsp;{this.state.fileName}
 			</ReactFileReader>
 			<button onClick={this.handleClick}>Filter</button>
-			<p>{this.state.fileName}</p>
 			<Table data={data} table={this.state.table} />
 			</div>
 		)

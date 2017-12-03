@@ -7,6 +7,7 @@ export default class Table extends React.Component {
       this.makeTable = this.makeTable.bind(this)
     }
     makeTable() {
+      var counts = {};
       let { data } = this.props;
       let tableHead = ['Id', 'Frame', 'Powertrain', 'Vehicle Name', 'Wheels']
       let table = document.getElementById("myTable");
@@ -22,6 +23,11 @@ export default class Table extends React.Component {
         var keys = Object.keys(data[0]).filter(i => i != "_id");
       
       for (var i = 0; i < data.length; i++) {
+        if(data[i]['frame'] in counts) {
+          counts[data[i]['frame']]++
+        } else {
+          counts[data[i]['frame']] = 1
+        }
         let row1 = table.insertRow();
         for (var value of keys) {
           var cell1 = row1.insertCell();
@@ -33,12 +39,15 @@ export default class Table extends React.Component {
           }
         }
       }
-    }
+      var summary = Object.keys(counts).map(item => +counts[item]+" "+item)
+      $("#summary").text("There are "+summary.join()+" types of vehicles in xml file.");
+      }
     }
     render() {
       console.log(this.props)
       return ( < div > {
           this.props.table ? this.makeTable() : null
-        } < /div>)
+        }
+         < /div>)
       }
     }
