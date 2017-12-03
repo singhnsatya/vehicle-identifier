@@ -1,6 +1,6 @@
 ux ->
 npm install ->
-node index.js
+npm start
 
 node-api ->
 npm install ->
