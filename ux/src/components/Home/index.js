@@ -19,6 +19,9 @@ class Homes extends React.Component {
 	}
 	uploadFile(files) {
 		// history.push('/')
+		if(this.props.location.pathname == "/filter") {
+			history.push('/')
+		}
 		$("#filter").hide();
 		let fileData = [files['base64'][0].split(',')]
 		var bufferData = fileData[0][1];
@@ -36,7 +39,6 @@ class Homes extends React.Component {
 		history.push('/filter')
 	}
 	render() {
-		console.log(this.props.store)
 		var data = this.props.store.tables.toJS();
 		console.log(data)
 		return (
