@@ -1,0 +1,107 @@
+body {
+ margin:0;
+ font-family: sans-serif;
+} 
+
+.xml-title {
+	color: #2C3E50;
+	padding-top: 20px;
+	font-size: 18px;
+	padding-left: 20px;
+}
+
+#container {
+	/*border: 1px coral solid;*/
+	width: 99.8%;
+	height: 624px;
+}
+
+#div-button {
+	/*border: 1px coral solid;*/
+	margin-top: -70px;
+	margin-left: 180px;
+}
+
+.div-button-right {
+	/*border: 1px coral solid;*/
+	float: right;
+	width: 50%;
+	margin-top: 5px;
+}
+
+.div-button-left {
+	/*border: 1px coral solid;*/
+	float: left;
+	margin-top: 5px;
+}
+
+.btn-upload {
+
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	/*border: 1px coral solid;*/
+	background-color: #013243;
+	box-shadow: 0px 5px 10px grey;
+}
+
+.header-title {
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	margin-left: 10%;
+	margin-top: 0px;
+	padding-top: 27px;
+}
+
+#root-left {
+	/*border: 1px coral solid;*/
+	width: 100%;
+	float: left;
+	/*margin-left: 10%;*/
+}
+
+#root {
+	/*border: 1px coral solid;*/
+	height: 150px;
+}
+
+.filter-btn {
+   background-color: white; 
+    color: #263238; 
+    border-radius: 5px;
+    border: 1px solid #546E7A;
+    padding: 4px 30px;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    outline:none;
+    margin-left: 50%;
+}
+.filter-btn:hover {
+    border: 1px solid #4B77BE;
+    color: #4B77BE;
+}
+
+.btn-upload {
+	background-color: white; 
+    color: #263238; 
+    border-radius: 5px;
+    border: 1px solid #546E7A;
+    padding: 4px 30px;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    outline:none;
+}
+
+.btn-upload:hover {
+    border: 1px solid #4B77BE;
+    color: #4B77BE;
+}

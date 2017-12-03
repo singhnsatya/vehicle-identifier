@@ -1,0 +1,23 @@
+.xml-title {
+  color: red; }
+
+#home {
+  border: 1px coral solid;
+  width: 100%; }
+
+#container {
+  border: 1px coral solid;
+  width: 100%;
+  height: 624px; }
+
+#filter-btn {
+  border: 1px coral solid;
+  width: 50%;
+  margin: right;
+  right: 0px;
+  position: absolute;
+  margin-top: -70px; }
+
+#home-left {
+  border: 1px coral solid;
+  width: 200px; }

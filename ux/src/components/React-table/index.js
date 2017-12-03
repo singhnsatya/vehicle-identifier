@@ -1,5 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
+import './table.css';
 
 export default class Table extends React.Component {
     constructor(props) {
@@ -24,9 +25,9 @@ export default class Table extends React.Component {
       
       for (var i = 0; i < data.length; i++) {
         if(data[i]['frame'] in counts) {
-          counts[data[i]['frame']]++
+          counts[data[i]['vehicle_name']]++
         } else {
-          counts[data[i]['frame']] = 1
+          counts[data[i]['vehicle_name']] = 1
         }
         let row1 = table.insertRow();
         for (var value of keys) {
@@ -40,7 +41,7 @@ export default class Table extends React.Component {
         }
       }
       var summary = Object.keys(counts).map(item => +counts[item]+" "+item)
-      $("#summary").text("There are "+summary.join()+" types of vehicles in xml file.");
+      $("#summary").text("There are "+summary.join()+" types of vehicles in this xml file.");
       }
     }
     render() {

@@ -2,6 +2,7 @@ import React from 'react';
 import { history } from '../../helpers';
 import Dropdown from './Dropdown';
 import { observer, inject } from 'mobx-react';
+import './dropdown.css';
 
 class Filters extends React.Component {
 	constructor(props) {
@@ -19,9 +20,9 @@ class Filters extends React.Component {
 	render() {
 		const data = this.props.store.allDates.toJS();
 		return ( 
-			<div>
+			<div id="root-right">
 			<p className="filter-title">Filter According to dates</p>
-			<button onClick = { this.goBack.bind(this) }> Cancle < /button>
+			<button className="btn-cancel" onClick = { this.goBack.bind(this) }> Cancle < /button>
 			<Dropdown downdata={data} />
 			</div>
 			)

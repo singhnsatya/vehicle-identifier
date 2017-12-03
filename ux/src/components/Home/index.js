@@ -3,6 +3,7 @@ import Table from '../React-table';
 import ReactFileReader from 'react-file-reader';
 import { history } from '../../helpers';
 import { observer, inject } from 'mobx-react';
+import './home.css';
 
 class Homes extends React.Component {
 	constructor() {
@@ -43,12 +44,18 @@ class Homes extends React.Component {
 		var data = this.props.store.tables.toJS();
 		console.log(data)
 		return (
-			<div>
-			<p className="title">Upload a xml file</p><br/>
+			<div id="root-left">
+			<p className="xml-title">Upload a xml file</p><br/>
+			<div id="div-button">
+			<div className="div-button-left">
 			<ReactFileReader fileTypes={[".xml"]} base64={true} multipleFiles={true} handleFiles={this.uploadFile.bind(this)}>
-			  <button className='btn'>Upload</button>&nbsp;&nbsp;{this.state.fileName}
+			  <button className='btn-upload'>Upload</button>&nbsp;&nbsp;{this.state.fileName}
 			</ReactFileReader>
-			<button onClick={this.handleClick}>Filter</button>
+			</div>
+			<div className="div-button-right">
+			<button className="filter-btn" onClick={this.handleClick}>Filter</button>
+			</div>
+			</div>
 			<Table data={data} table={this.state.table} />
 			</div>
 		)

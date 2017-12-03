@@ -1,0 +1,68 @@
+.myTable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.myTable tr {
+  border: 1px solid #D9E4E6;
+}
+.myTable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.myTable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.myTable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.myTable th:nth-child(2) {
+  display: table-cell;
+}
+.myTable th:nth-child(2) span {
+  display: none;
+}
+.myTable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .myTable th:nth-child(2) span {
+    display: block;
+  }
+  .myTable th:nth-child(2):after {
+    display: none;
+  }
+}
+.myTable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.myTable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .myTable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.myTable th, .myTable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .myTable th, .myTable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,192 @@
+.myTable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92; }
+
+.myTable tr {
+  border: 1px solid #D9E4E6; }
+
+.myTable tr:nth-child(odd) {
+  background-color: #EAF3F3; }
+
+.myTable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em; }
+
+.myTable th:first-child {
+  display: table-cell;
+  text-align: center; }
+
+.myTable th:nth-child(2) {
+  display: table-cell; }
+
+.myTable th:nth-child(2) span {
+  display: none; }
+
+.myTable th:nth-child(2):after {
+  content: attr(data-th); }
+
+@media (min-width: 480px) {
+  .myTable th:nth-child(2) span {
+    display: block; }
+  .myTable th:nth-child(2):after {
+    display: none; } }
+
+.myTable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em; }
+
+.myTable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6; }
+
+@media (min-width: 480px) {
+  .myTable td {
+    border: 1px solid #D9E4E6; } }
+
+.myTable th, .myTable td {
+  text-align: left;
+  margin: .5em 1em; }
+
+@media (min-width: 480px) {
+  .myTable th, .myTable td {
+    display: table-cell;
+    padding: 1em; } }
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+.xml-title {
+  color: #2C3E50;
+  padding-top: 20px;
+  font-size: 18px;
+  padding-left: 20px; }
+
+#container {
+  /*border: 1px coral solid;*/
+  width: 99.8%;
+  height: 624px; }
+
+#div-button {
+  /*border: 1px coral solid;*/
+  margin-top: -70px;
+  margin-left: 180px; }
+
+.div-button-right {
+  /*border: 1px coral solid;*/
+  float: right;
+  width: 50%;
+  margin-top: 5px; }
+
+.div-button-left {
+  /*border: 1px coral solid;*/
+  float: left;
+  margin-top: 5px; }
+
+#header {
+  width: 100%;
+  height: 80px;
+  /*border: 1px coral solid;*/
+  background-color: #013243;
+  box-shadow: 0px 5px 10px grey; }
+
+.header-title {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 0px;
+  padding-top: 27px; }
+
+#root-left {
+  /*border: 1px coral solid;*/
+  width: 100%;
+  float: left;
+  /*margin-left: 10%;*/ }
+
+#root {
+  /*border: 1px coral solid;*/
+  height: 150px; }
+
+.filter-btn {
+  background-color: white;
+  color: #263238;
+  border-radius: 5px;
+  border: 1px solid #546E7A;
+  padding: 4px 30px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  margin-left: 50%; }
+
+.filter-btn:hover {
+  border: 1px solid #4B77BE;
+  color: #4B77BE; }
+
+.btn-upload {
+  background-color: white;
+  color: #263238;
+  border-radius: 5px;
+  border: 1px solid #546E7A;
+  padding: 4px 30px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none; }
+
+.btn-upload:hover {
+  border: 1px solid #4B77BE;
+  color: #4B77BE; }
+#root-right {
+  /*border: 1px coral solid;*/
+  float: right;
+  padding-top: 0px;
+  margin-right: 20%;
+  margin-top: -60px; }
+
+.filter-title {
+  color: #2C3E50;
+  padding-top: 10px;
+  font-size: 18px; }
+
+.btn-cancel {
+  background-color: white;
+  color: #22313F;
+  border: 1px solid #546E7A;
+  padding: 3px 20px;
+  text-align: center;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none; }
+
+.my-select {
+  font: 400 12px/1.3 "Helvetica Neue", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+  line-height: 1;
+  outline: 0;
+  color: black;
+  border-color: black;
+  padding: 0.65em 2.5em 0.55em 0.75em;
+  border-radius: 3px;
+  background: linear-gradient(black, black) no-repeat, linear-gradient(-135deg, rgba(255, 255, 255, 0) 50%, white 50%) no-repeat, linear-gradient(-225deg, rgba(255, 255, 255, 0) 50%, white 50%) no-repeat, linear-gradient(black, black) no-repeat;
+  background-color: white;
+  background-size: 1px 100%, 20px 20px, 20px 20px, 20px 60%;
+  background-position: right 20px center, right bottom, right bottom, right bottom; }

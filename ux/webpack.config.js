@@ -1,4 +1,8 @@
 const path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin")
+var extractPlugin = new ExtractTextPlugin({
+	filename: "main.css"
+})
 
 const APP_DIR = path.resolve(__dirname, 'src');
 
@@ -24,8 +28,16 @@ module.exports = {
 			    "presets" : ["es2015", "react", "stage-0"],
   				"plugins": ["transform-decorators-legacy", "transform-class-properties"]
 			  }
-
+			},
+			{
+				test: /\.css/,
+				use: extractPlugin.extract({
+					use: ['css-loader', 'sass-loader']
+				})
 			}
 		]
-	}
+	},
+	plugins: [
+		extractPlugin
+	]
 }

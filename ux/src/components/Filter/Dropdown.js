@@ -24,7 +24,7 @@ class Dropdowns extends React.Component {
 		const tabledata = this.props.store.ontable.toJS();
 		var drop = (
 		<div>
-		<select ref="select" id="dateList" onChange={this.handleChange}>
+		<select ref="select" id="dateList" className="my-select" onChange={this.handleChange}>
 			  <option value="" selected disabled hidden>Select Date</option>
             {            	
             	downdata.map(user => {
@@ -37,7 +37,7 @@ class Dropdowns extends React.Component {
       </div>
 		)
 		var emptydown = (
-			<select ref="select" id="dateList" onChange={this.handleChange}>
+			<select ref="select" id="dateList" className="my-select" onChange={this.handleChange}>
 			  <option value="" selected disabled hidden>No Records to show</option>
 			  </select>
 		)
