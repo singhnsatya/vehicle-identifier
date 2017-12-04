@@ -10,3 +10,8 @@ to make ux build ->
 npm run build
 
 check sample.xml for xml file format.
+
+Architecture:
+On any xml file upload mobx action is called which calls api and then api in backend send the data to engine,
+engine then converts, validates and computes the data and returns the result which is then store in database
+and returns the response result and then rendered on ui.
