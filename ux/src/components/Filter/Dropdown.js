@@ -1,45 +1,76 @@
 import React from 'react';
 import { observer, inject } from 'mobx-react';
 import Table from '../React-table';
+// import React from 'react';
+import DropDownMenu from 'material-ui/DropDownMenu';
+import MenuItem from 'material-ui/MenuItem';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 
 class Dropdowns extends React.Component {
 	constructor(props) {
 		super(props)
 		this.handleChange = this.handleChange.bind(this)
 		this.state = {
-			table: false
+			table: false,
+			value: -1,
+			date: null
 		}
 	}
-	handleChange(e) {
-		console.log(e.target.value)
-		this.setState({date: e.target.value})
-		this.props.store.getOnDates(e.target.value)
-		this.setState({table: true})
-	}
-  /*get() {
-  	this.props.actions.getOnDates("2017-12-02T10:16:59.884Z")	
-  }*/
-	render() {
+	handleChange(e, k, v) {
 		const {downdata} = this.props;
+		if(v != -1) {
+			this.setState({value: v, date: downdata[v]['_id']})
+			this.props.store.getOnDates(downdata[v]['_id'])
+			this.setState({table: true})
+		}
+	}
+	render() {
+	const styles = {
+	  customWidth: {
+	    width: 400,
+	  },
+	};
+
+		const {downdata} = this.props;
+		var items = downdata.map((user, index) => {
+  		let date = new Date(user['_id']).toString();
+  		return <MenuItem value={index} key={user['_id']} primaryText={date} />
+  	})
+
+  	items.unshift(<MenuItem value={-1} key={-1} primaryText={"Select Date"} />)
+
 		const tabledata = this.props.store.ontable.toJS();
 		var drop = (
 		<div>
-		<select ref="select" id="dateList" className="my-select" onChange={this.handleChange}>
-			  <option value="" selected disabled hidden>Select Date</option>
-            {            	
-            	downdata.map(user => {
-            		let date = new Date(user['_id']).toString();
-            		return <option key={user['_id']} value={user['_id']}>{date}</option>
-            	})
-          }
-          </select>
+          <MuiThemeProvider>
+          <DropDownMenu
+          className="material-select"
+          value={this.state.value}
+          onChange={this.handleChange}
+          style={styles.customWidth}
+          autoWidth={false}
+        >
+        {items}
+        </DropDownMenu>
+	      </MuiThemeProvider>
           <Table data={tabledata} table={this.state.table} />
       </div>
 		)
 		var emptydown = (
-			<select ref="select" id="dateList" className="my-select" onChange={this.handleChange}>
-			  <option value="" selected disabled hidden>No Records to show</option>
-			  </select>
+			<div>
+          <MuiThemeProvider>
+          <DropDownMenu
+          className="material-select"
+          value={this.state.value}
+          onChange={this.handleChange}
+          style={styles.customWidth}
+          autoWidth={false}
+        >
+        <MenuItem value={-1} key={-1} primaryText={"Select Date"} />
+        </DropDownMenu>
+	      </MuiThemeProvider>
+	      </div>
 		)
 		return (
 			<div>
