@@ -24,7 +24,7 @@ export default class Table extends React.Component {
         var keys = Object.keys(data[0]).filter(i => i != "_id");
       
       for (var i = 0; i < data.length; i++) {
-        if(data[i]['frame'] in counts) {
+        if(data[i]['vehicle_name'] in counts) {
           counts[data[i]['vehicle_name']]++
         } else {
           counts[data[i]['vehicle_name']] = 1
