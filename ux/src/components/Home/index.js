@@ -1,9 +1,11 @@
 import React from 'react';
-import Table from '../React-table';
+import DateTable from '../React-table';
 import ReactFileReader from 'react-file-reader';
 import { history } from '../../helpers';
 import { observer, inject } from 'mobx-react';
 import './home.css';
+import RaisedButton from 'material-ui/RaisedButton';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 class Homes extends React.Component {
 	constructor() {
@@ -43,20 +45,27 @@ class Homes extends React.Component {
 	render() {
 		var data = this.props.store.tables.toJS();
 		console.log(data)
+		const style = {
+  margin: 12,
+};
 		return (
 			<div id="root-left">
 			<p className="xml-title">Upload a xml file</p><br/>
 			<div id="div-button">
 			<div className="div-button-left">
 			<ReactFileReader fileTypes={[".xml"]} base64={true} multipleFiles={true} handleFiles={this.uploadFile.bind(this)}>
-			  <button className='btn-upload'>Upload</button>&nbsp;&nbsp;{this.state.fileName}
+			  <MuiThemeProvider>
+			<RaisedButton backgroundColor="#283593" className="btn-upload" label="Upload" style={style} labelColor="white" />
+			</MuiThemeProvider>{this.state.fileName}
 			</ReactFileReader>
 			</div>
 			<div className="div-button-right">
-			<button className="filter-btn" onClick={this.handleClick}>Filter</button>
+			<MuiThemeProvider>
+			<RaisedButton backgroundColor="#283593" className="btn-upload" label="Filter" style={style} labelColor="white" onClick={this.handleClick}/>
+			</MuiThemeProvider>
 			</div>
 			</div>
-			<Table data={data} table={this.state.table} />
+			<DateTable data={data} table={this.state.table} />
 			</div>
 		)
 	}

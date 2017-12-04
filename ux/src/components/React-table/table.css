@@ -5,7 +5,7 @@
   background: #FFF;
   color: #024457;
   border-radius: 10px;
-  border: 1px solid #167F92;
+  border: 1px solid #283593;
 }
 .myTable tr {
   border: 1px solid #D9E4E6;
@@ -16,7 +16,7 @@
 .myTable th {
   display: none;
   border: 1px solid #FFF;
-  background-color: #167F92;
+  background-color: #283593;
   color: #FFF;
   padding: 1em;
 }

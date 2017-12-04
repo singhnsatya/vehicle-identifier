@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer, inject } from 'mobx-react';
-import Table from '../React-table';
+import DateTable from '../React-table';
 // import React from 'react';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -54,7 +54,7 @@ class Dropdowns extends React.Component {
         {items}
         </DropDownMenu>
 	      </MuiThemeProvider>
-          <Table data={tabledata} table={this.state.table} />
+          <DateTable data={tabledata} table={this.state.table} />
       </div>
 		)
 		var emptydown = (
