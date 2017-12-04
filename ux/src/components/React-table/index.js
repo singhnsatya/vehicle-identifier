@@ -9,6 +9,7 @@ export default class Table extends React.Component {
     }
     makeTable() {
       var counts = {};
+      var vehicleSummary = [];
       let { data } = this.props;
       let tableHead = ['Id', 'Frame', 'Powertrain', 'Vehicle Name', 'Wheels']
       let table = document.getElementById("myTable");
@@ -35,17 +36,19 @@ export default class Table extends React.Component {
           if (value == "wheels") {
             cell1.innerHTML = data[i][value] && data[i][value]['plastic'] && data[i][value]['plastic']+" ("+data[i][value]['positions'].join()+")" || 
             data[i][value] && data[i][value]['metal'] && data[i][value]['metal']+" ("+data[i][value]['positions'].join()+")" || "none"
+            vehicleSummary.push(data[i]['vehicle_name']+" is made up of "+data[i]['frame']+" frame having "+cell1.innerHTML+" wheels and powertrain is "+data[i]['powertrain'])
           } else {
             cell1.innerHTML = data[i][value]
           }
         }
       }
+      // console.log(vehicleSummary)
+      vehicleSummary = vehicleSummary.filter((v, i, s) => s.indexOf(v) === i);
       var summary = Object.keys(counts).map(item => +counts[item]+" "+item)
-      $("#summary").text("There are "+summary.join()+" types of vehicles in this xml file.");
+      $("#summary").text("There are "+summary.join()+" types of vehicles in this xml file. "+vehicleSummary.join()+".");
       }
     }
     render() {
-      console.log(this.props)
       return ( < div > {
           this.props.table ? this.makeTable() : null
         }
