@@ -26,7 +26,7 @@ class Filters extends React.Component {
 			<p className="filter-title">Filter According to dates</p>
 			<div>
 			</div>
-			<button className="btn-cancel" onClick = { this.goBack.bind(this) }> Cancle < /button>
+			<button className="btn-cancel" onClick = { this.goBack.bind(this) }> Cancel < /button>
 			<Dropdown downdata={data} />
 			</div>
 			)
