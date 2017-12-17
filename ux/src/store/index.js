@@ -6,10 +6,6 @@ class FileStore {
 	@observable allDates = []
 	@observable tables = []
 	@observable ontable = []
-	@computed get filteredTodos() {
-		var matchesFilter = new RegExp(this.filter, "i")
-		return this.todos.filter(todo => !this.filter || matchesFilter.test(todo))
-	}
 
 	@action getAllDates() {
 		fileApi.dates()
