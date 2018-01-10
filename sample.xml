@@ -22,474 +22,6 @@
 			<human/>
 		</powertrain>
 	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
-		<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>	<vehicle>
-		<id>vehicle 1</id>
-		<frame>
-			<material>plastic</material>
-		</frame>
-		<wheels>
-			<wheel>
-				<position>left rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>right rear</position>
-				<material>plastic</material>
-			</wheel>
-			<wheel>
-				<position>front</position>
-				<material>plastic</material>
-			</wheel>
-		</wheels>
-		<powertrain>
-			<human/>
-		</powertrain>
-	</vehicle>
 	<vehicle>
 		<id>vehicle 2</id>
 		<frame>
@@ -518,6 +50,52 @@
 		</wheels>
 		<powertrain>
 			<bernoulli/>
+		</powertrain>
+	</vehicle>
+	<vehicle>
+		<id>vehicle 4</id>
+		<frame>
+			<material>metal</material>
+		</frame>
+		<wheels>
+			<wheel>
+				<position>rear</position>
+				<material>metal</material>
+			</wheel>
+			<wheel>
+				<position>front</position>
+				<material>metal</material>
+			</wheel>
+		</wheels>
+		<powertrain>
+			<internalcombustion/>
+		</powertrain>
+	</vehicle>
+	<vehicle>
+		<id>vehicle 5</id>
+		<frame>
+			<material>metal</material>
+		</frame>
+		<wheels>
+			<wheel>
+				<position>left rear</position>
+				<material>metal</material>
+			</wheel>
+			<wheel>
+				<position>right rear</position>
+				<material>metal</material>
+			</wheel>
+			<wheel>
+				<position>front right</position>
+				<material>metal</material>
+			</wheel>
+			<wheel>
+				<position>front left</position>
+				<material>metal</material>
+			</wheel>
+		</wheels>
+		<powertrain>
+			<internalcombustion/>
 		</powertrain>
 	</vehicle>
 </vehicles>
