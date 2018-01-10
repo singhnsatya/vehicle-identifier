@@ -3,7 +3,7 @@ var ruleSet = (function(frame, wheels, powertrain) {
   var vehicle_name;
 
   function hasMetal(wheels, powertrain) {
-    vehicle_name = wheels['metal'] == 4 ? "Car" : wheels['metal'] == 2 && powertrain == "human" ? "Bicycle" : wheels['metal'] == 2 && powertrain == "internal combustion" 
+    vehicle_name = wheels['metal'] == 4 ? "Car" : wheels['metal'] == 2 && powertrain == "human" ? "Bicycle" : wheels['metal'] == 2 && powertrain == "internalcombustion" 
     ? "Motorcycle" : "Vehicle not found"
     return vehicle_name;
   }
