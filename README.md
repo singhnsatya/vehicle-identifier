@@ -2,7 +2,7 @@ Requires node version 6.9.1 or 6.x.x
 
 ux ->
 npm install ->
-npm start
+node index.js
 
 node-api ->
 npm install ->
