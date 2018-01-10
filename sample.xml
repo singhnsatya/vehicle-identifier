@@ -98,4 +98,50 @@
 			<internalcombustion/>
 		</powertrain>
 	</vehicle>
+	<vehicle>
+		<id>vehicle 6</id>
+		<frame>
+			<material>plastic</material>
+		</frame>
+		<wheels>
+			<wheel>
+				<position>left rear</position>
+				<material>plastic</material>
+			</wheel>
+			<wheel>
+				<position>right rear</position>
+				<material>plastic</material>
+			</wheel>
+			<wheel>
+				<position>front</position>
+				<material>plastic</material>
+			</wheel>
+		</wheels>
+		<powertrain>
+			<human/>
+		</powertrain>
+	</vehicle>
+	<vehicle>
+		<id>vehicle 7</id>
+		<frame>
+			<material>plastic</material>
+		</frame>
+		<wheels>
+			<wheel>
+				<position>left rear</position>
+				<material>plastic</material>
+			</wheel>
+			<wheel>
+				<position>right rear</position>
+				<material>plastic</material>
+			</wheel>
+			<wheel>
+				<position>front</position>
+				<material>plastic</material>
+			</wheel>
+		</wheels>
+		<powertrain>
+			<human/>
+		</powertrain>
+	</vehicle>
 </vehicles>
