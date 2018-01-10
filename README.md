@@ -1,3 +1,5 @@
+Requires node version 6.9.1 or 6.x.x
+
 ux ->
 npm install ->
 npm start
@@ -25,5 +27,5 @@ Below is the vehicle type and features.
 
 Working:
 On any xml file upload mobx action is called which calls api and then api in backend sends the data to engine,
-engine then converts, validates and computes the data and returns the result which is then store in database
+engine then converts, validates and computes the data and returns the result which is then stored in database
 and returns the response result and then it is rendered on ui.
