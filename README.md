@@ -23,9 +23,3 @@ Below is the vehicle type and features.
 |Motorcycle| metal| Internal Combustion| 2 metal (front, rear)|
 |Hang Glider| plastic| Bernoulli| none|
 |Car| metal|Internal Combustion|4 (front right, front left, rear right, rear left)|
-
-
-Working:
-On any xml file upload mobx action is called which calls api and then api in backend sends the data to engine,
-engine then converts, validates and computes the data and returns the result which is then stored in database
-and returns the response result and then it is rendered on ui.
